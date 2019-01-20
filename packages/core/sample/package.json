@@ -1,0 +1,9 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "babel --root-mode upward src --out-dir lib"
+  }
+}

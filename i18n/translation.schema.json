@@ -1,0 +1,45 @@
+{
+	"type": "object",
+	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"sample": {
+			"type": "object",
+			"properties": {
+				"Hello ${0}": {
+					"type": "string",
+					"minLength": 1,
+					"pattern": "(?=.*?\\$\\{0\\})"
+				}
+			},
+			"required": [
+				"Hello ${0}"
+			]
+		},
+		"simple": {
+			"type": "object",
+			"properties": {
+				"Hello ${0}": {
+					"type": "string",
+					"minLength": 1,
+					"pattern": "(?=.*?\\$\\{0\\})"
+				},
+				"Unknown ${0}": {
+					"type": "string",
+					"minLength": 1,
+					"pattern": "(?=.*?\\$\\{0\\})"
+				}
+			},
+			"required": [
+				"Hello ${0}",
+				"Unknown ${0}"
+			]
+		}
+	},
+	"required": [
+		"sample",
+		"simple"
+	],
+	"additionalProperties": false
+}

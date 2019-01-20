@@ -1,0 +1,27 @@
+{
+  "name": "monorepo-easy-check-text",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:MrCheater/monorepo-easy-check-text.git",
+  "author": "Mr.Cheater - Anton Zhukov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.0.0",
+    "babel-plugin-i18n-tag-translate": "^2.0.0",
+    "oao": "^1.5.1",
+    "es2015-i18n-tag": "^1.4.1",
+    "i18n-tag-schema": "^2.5.0"
+  },
+  "workspaces": [
+    "packages/core/*",
+    "packages/utils/*"
+  ],
+  "scripts": {
+    "prepare": "oao run-script \"prepare\"",
+    "i18n:generate": "i18n-tag-schema ./packages --schema ./i18n/translation.schema.json --preprocessor i18n-preprocessor",
+    "i18n:validate": "i18n-tag-schema ./i18n/translations --validate --schema ./i18n/translation.schema.json"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "i18n-preprocessor",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "prepare": "babel --root-mode upward src --out-dir lib"
+  }
+}

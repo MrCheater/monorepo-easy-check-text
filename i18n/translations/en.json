@@ -1,0 +1,8 @@
+{
+    "simple": {
+        "Hello ${0}": "Hello Simple ${0}"
+    },
+    "sample": {
+        "Hello ${0}": "Hello Sample ${0}"
+    }
+}
