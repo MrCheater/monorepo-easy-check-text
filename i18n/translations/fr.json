@@ -1,0 +1,9 @@
+{
+    "packages/core/simple/src/index.js": {
+        "Hello ${0}": "Bonjour Simple ${0}",
+        "Unknown ${0}": "Unknown Simple ${0}"
+    },
+    "packages/core/sample/src/index.js": {
+        "Hello ${0}": "Bonjour Sample ${0}"
+    }
+}
