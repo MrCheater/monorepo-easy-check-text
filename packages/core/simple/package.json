@@ -5,5 +5,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "babel --root-mode upward src --out-dir lib"
+  },
+  "dependencies": {
+    "es2015-i18n-tag": "^1.4.1"
   }
 }

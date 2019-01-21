@@ -11,7 +11,8 @@ module.exports = (api) => {
 		plugins: [
 			['babel-plugin-i18n-tag-translate', {
 				translation: path.join(__dirname, 'i18n/translations/en.json'),
-				globalImport: true
+				globalImport: true,
+				groupDir: __dirname
 			}]
 		]
 	}

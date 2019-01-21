@@ -4,7 +4,7 @@
 		"$schema": {
 			"type": "string"
 		},
-		"sample": {
+		"packages/core/sample/src/index.js": {
 			"type": "object",
 			"properties": {
 				"Hello ${0}": {
@@ -17,7 +17,7 @@
 				"Hello ${0}"
 			]
 		},
-		"simple": {
+		"packages/core/simple/src/index.js": {
 			"type": "object",
 			"properties": {
 				"Hello ${0}": {
@@ -38,8 +38,8 @@
 		}
 	},
 	"required": [
-		"sample",
-		"simple"
+		"packages/core/sample/src/index.js",
+		"packages/core/simple/src/index.js"
 	],
 	"additionalProperties": false
 }
